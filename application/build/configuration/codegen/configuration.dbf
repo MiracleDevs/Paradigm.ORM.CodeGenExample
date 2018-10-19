@@ -1,0 +1,336 @@
+[
+  {
+    "Class": {
+      "Properties": [
+        {
+          "Name": "FirstName",
+          "TypeName": "System.String",
+          "Attributes": [
+            {
+              "Name": "ColumnAttribute",
+              "Parameters": [
+                {
+                  "Name": "Name",
+                  "Value": "first_name",
+                  "IsNumeric": false
+                },
+                {
+                  "Name": "Type",
+                  "Value": "text",
+                  "IsNumeric": false
+                }
+              ]
+            },
+            {
+              "Name": "NotNullableAttribute",
+              "Parameters": []
+            },
+            {
+              "Name": "PrimaryKeyAttribute",
+              "Parameters": []
+            }
+          ]
+        },
+        {
+          "Name": "Heat",
+          "TypeName": "System.Double",
+          "Attributes": [
+            {
+              "Name": "ColumnAttribute",
+              "Parameters": [
+                {
+                  "Name": "Name",
+                  "Value": "heat",
+                  "IsNumeric": false
+                },
+                {
+                  "Name": "Type",
+                  "Value": "double",
+                  "IsNumeric": false
+                }
+              ]
+            },
+            {
+              "Name": "NotNullableAttribute",
+              "Parameters": []
+            }
+          ]
+        },
+        {
+          "Name": "LastName",
+          "TypeName": "System.String",
+          "Attributes": [
+            {
+              "Name": "ColumnAttribute",
+              "Parameters": [
+                {
+                  "Name": "Name",
+                  "Value": "last_name",
+                  "IsNumeric": false
+                },
+                {
+                  "Name": "Type",
+                  "Value": "text",
+                  "IsNumeric": false
+                }
+              ]
+            },
+            {
+              "Name": "NotNullableAttribute",
+              "Parameters": []
+            },
+            {
+              "Name": "PrimaryKeyAttribute",
+              "Parameters": []
+            }
+          ]
+        },
+        {
+          "Name": "Location",
+          "TypeName": "System.String",
+          "Attributes": [
+            {
+              "Name": "ColumnAttribute",
+              "Parameters": [
+                {
+                  "Name": "Name",
+                  "Value": "location",
+                  "IsNumeric": false
+                },
+                {
+                  "Name": "Type",
+                  "Value": "text",
+                  "IsNumeric": false
+                }
+              ]
+            },
+            {
+              "Name": "NotNullableAttribute",
+              "Parameters": []
+            }
+          ]
+        },
+        {
+          "Name": "Speed",
+          "TypeName": "System.Double",
+          "Attributes": [
+            {
+              "Name": "ColumnAttribute",
+              "Parameters": [
+                {
+                  "Name": "Name",
+                  "Value": "speed",
+                  "IsNumeric": false
+                },
+                {
+                  "Name": "Type",
+                  "Value": "double",
+                  "IsNumeric": false
+                }
+              ]
+            },
+            {
+              "Name": "NotNullableAttribute",
+              "Parameters": []
+            }
+          ]
+        },
+        {
+          "Name": "TelepathyPowers",
+          "TypeName": "System.Int32",
+          "Attributes": [
+            {
+              "Name": "ColumnAttribute",
+              "Parameters": [
+                {
+                  "Name": "Name",
+                  "Value": "telepathy_powers",
+                  "IsNumeric": false
+                },
+                {
+                  "Name": "Type",
+                  "Value": "int",
+                  "IsNumeric": false
+                }
+              ]
+            },
+            {
+              "Name": "NotNullableAttribute",
+              "Parameters": []
+            },
+            {
+              "Name": "RangeAttribute",
+              "Parameters": [
+                {
+                  "Name": "MinValue",
+                  "Value": "-2147483648",
+                  "IsNumeric": false
+                },
+                {
+                  "Name": "MaxValue",
+                  "Value": "2147483647",
+                  "IsNumeric": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Timestamp",
+          "TypeName": "System.DateTimeOffset",
+          "Attributes": [
+            {
+              "Name": "ColumnAttribute",
+              "Parameters": [
+                {
+                  "Name": "Name",
+                  "Value": "timestamp",
+                  "IsNumeric": false
+                },
+                {
+                  "Name": "Type",
+                  "Value": "timestamp",
+                  "IsNumeric": false
+                }
+              ]
+            },
+            {
+              "Name": "NotNullableAttribute",
+              "Parameters": []
+            }
+          ]
+        }
+      ],
+      "Methods": [],
+      "GenericArguments": [],
+      "Name": "TrackingData",
+      "FullName": ".TrackingData",
+      "Namespace": null,
+      "IsInterface": false,
+      "IsArray": false,
+      "IsAbstract": false,
+      "BaseTypeName": null,
+      "InnerObjectName": null,
+      "ImplementedInterfaces": [],
+      "Attributes": [
+        {
+          "Name": "TableAttribute",
+          "Parameters": [
+            {
+              "Name": "Catalog",
+              "Value": "tracking",
+              "IsNumeric": false
+            },
+            {
+              "Name": "Schema",
+              "Value": null,
+              "IsNumeric": false
+            },
+            {
+              "Name": "Name",
+              "Value": "tracking_data",
+              "IsNumeric": false
+            }
+          ]
+        }
+      ]
+    },
+    "Struct": null,
+    "Enum": null
+  },
+  {
+    "Class": {
+      "Properties": [],
+      "Methods": [],
+      "GenericArguments": [],
+      "Name": "String",
+      "FullName": "System.String",
+      "Namespace": "System",
+      "IsInterface": false,
+      "IsArray": false,
+      "IsAbstract": false,
+      "BaseTypeName": null,
+      "InnerObjectName": null,
+      "ImplementedInterfaces": [],
+      "Attributes": []
+    },
+    "Struct": null,
+    "Enum": null
+  },
+  {
+    "Class": null,
+    "Struct": {
+      "Properties": [],
+      "Methods": [],
+      "GenericArguments": [],
+      "Name": "Double",
+      "FullName": "System.Double",
+      "Namespace": "System",
+      "IsInterface": false,
+      "IsArray": false,
+      "IsAbstract": false,
+      "BaseTypeName": null,
+      "InnerObjectName": null,
+      "ImplementedInterfaces": [],
+      "Attributes": []
+    },
+    "Enum": null
+  },
+  {
+    "Class": null,
+    "Struct": {
+      "Properties": [],
+      "Methods": [],
+      "GenericArguments": [],
+      "Name": "Int32",
+      "FullName": "System.Int32",
+      "Namespace": "System",
+      "IsInterface": false,
+      "IsArray": false,
+      "IsAbstract": false,
+      "BaseTypeName": null,
+      "InnerObjectName": null,
+      "ImplementedInterfaces": [],
+      "Attributes": []
+    },
+    "Enum": null
+  },
+  {
+    "Class": null,
+    "Struct": {
+      "Properties": [],
+      "Methods": [],
+      "GenericArguments": [],
+      "Name": "DateTimeOffset",
+      "FullName": "System.DateTimeOffset",
+      "Namespace": "System",
+      "IsInterface": false,
+      "IsArray": false,
+      "IsAbstract": false,
+      "BaseTypeName": null,
+      "InnerObjectName": null,
+      "ImplementedInterfaces": [],
+      "Attributes": []
+    },
+    "Enum": null
+  },
+  {
+    "Class": {
+      "Properties": [],
+      "Methods": [],
+      "GenericArguments": [],
+      "Name": "TrackingData[]",
+      "FullName": ".TrackingData[]",
+      "Namespace": null,
+      "IsInterface": false,
+      "IsArray": true,
+      "IsAbstract": false,
+      "BaseTypeName": null,
+      "InnerObjectName": ".TrackingData",
+      "ImplementedInterfaces": [],
+      "Attributes": []
+    },
+    "Struct": null,
+    "Enum": null
+  }
+]

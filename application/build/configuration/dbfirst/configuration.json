@@ -1,0 +1,45 @@
+{
+	"databaseType": "cassandra",
+	"databaseName": "tracking",
+	"connectionString": "Contact Points=192.168.2.221;Port=9042",
+	"outputFileName": "../codegen/configuration.dbf",
+	"tables": [
+		{
+			"name": "tracking_data",
+			"newName": "TrackingData",
+			"columnsToRename" : [
+				{
+				"name": "first_name",
+				"newName": "FirstName"
+				},
+				{
+					"name": "heat",
+					"newName": "Heat"
+				},
+				{
+					"name": "last_name",
+					"newName": "LastName"
+				},
+				{
+					"name": "location",
+					"newName": "Location"
+				},
+				{
+					"name": "speed",
+					"newName": "Speed"
+				},
+				{
+					"name": "telepathy_powers",
+					"newName": "TelepathyPowers"
+				},
+				{
+					"name": "timestamp",
+					"newName": "Timestamp"
+				}
+
+			]
+		}
+	],
+	"storedProcedures": [],
+	"views": []
+}

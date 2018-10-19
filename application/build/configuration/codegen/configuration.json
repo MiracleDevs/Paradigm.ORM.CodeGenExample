@@ -1,0 +1,258 @@
+{
+    "input": {
+        "inputType": "Json",
+        "parameters": [
+            {
+                "name": "jsonFiles",
+                "value": "configuration.dbf"
+            }
+        ]
+    },
+    "output": {
+        "outputType": "Razor",
+        "parameters": [
+            {
+                "name": "nativeTypeTranslatorsPath",
+                "value": "../templates/orm/translations.json"
+            }
+        ],
+        "outputFiles": [
+            /* DOMAIN INTERFACE */
+            {
+                "name": "DomainInterface",
+                "templatePath": "../templates/orm/domaininterfaces/domaininterface.tpl",
+                "outputPath": "../../../src/Paradigm.ORM.CodeGenExample.Domain/Interfaces/",
+                "typeMatchers": [
+                    {
+                        "name": "ContainsAttribute",
+                        "parameters": [
+                            "TableAttribute"
+                        ]
+                    }
+                ],
+                "namingRules": [
+                    {
+                        "name": "Format",
+                        "parameters": [
+                            "I{0}.cs"
+                        ]
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "Namespace",
+                        "value": "Paradigm.ORM.CodeGenExample.Domain.Interfaces"
+                    }
+                ]
+            },
+            /* TABLE INTERFACE */
+            {
+                "name": "TableInterface",
+                "templatePath": "../templates/orm/tables/tableinterface.tpl",
+                "outputPath": "../../../src/Paradigm.ORM.CodeGenExample.Domain/Tables/",
+                "typeMatchers": [
+                    {
+                        "name": "ContainsAttribute",
+                        "parameters": [
+                            "TableAttribute"
+                        ]
+                    }
+                ],
+                "namingRules": [
+                    {
+                        "name": "Format",
+                        "parameters": [
+                            "I{0}Table.cs"
+                        ]
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "Namespace",
+                        "value": "Paradigm.ORM.CodeGenExample.Domain.Tables"
+                    },
+                    {
+                        "name": "InterfacesNamespace",
+                        "value": "Paradigm.ORM.CodeGenExample.Domain.Interfaces"
+                    }
+                ]
+            },
+            /* DOMAIN ENTITY */
+            {
+                "name": "DomainEntity",
+                "templatePath": "../templates/orm/domainentities/domainentity.tpl",
+                "outputPath": "../../../src/Paradigm.ORM.CodeGenExample.Domain/Entities/",
+                "typeMatchers": [
+                    {
+                        "name": "ContainsAttribute",
+                        "parameters": [
+                            "TableAttribute"
+                        ]
+                    }
+                ],
+                "namingRules": [
+                    {
+                        "name": "Format",
+                        "parameters": [
+                            "{0}.cs"
+                        ]
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "Namespace",
+                        "value": "Paradigm.ORM.CodeGenExample.Domain.Entities"
+                    },
+                    {
+                        "name": "InterfacesNamespace",
+                        "value": "Paradigm.ORM.CodeGenExample.Domain.Interfaces"
+                    },
+                    {
+                        "name": "TablesNamespace",
+                        "value": "Paradigm.ORM.CodeGenExample.Domain.Tables"
+                    },
+                    {
+                        "name": "IgnoreProperties",
+                        "value": ""
+                    }
+                ]
+            },
+            /* DATABASE ACCESS INTERFACE */
+            {
+                "name": "DatabaseAccessInterface",
+                "templatePath": "../templates/orm/databaseaccess/idatabaseaccess.tpl",
+                "outputPath": "../../../src/Paradigm.ORM.CodeGenExample.Domain/DataAccess/",
+                "typeMatchers": [
+                    {
+                        "name": "ContainsAttribute",
+                        "parameters": [
+                            "TableAttribute"
+                        ]
+                    }
+                ],
+                "namingRules": [
+                    {
+                        "name": "Format",
+                        "parameters": [
+                            "I{0}DatabaseAccess.cs"
+                        ]
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "Namespace",
+                        "value": "Paradigm.ORM.CodeGenExample.Domain.DataAccess"
+                    },
+                    {
+                        "name": "DomainNamespace",
+                        "value": "Paradigm.ORM.CodeGenExample.Domain.Entities"
+                    }
+                ]
+            },
+            /* DATABASE ACCESS */
+            {
+                "name": "DatabaseAccess",
+                "templatePath": "../templates/orm/databaseaccess/databaseaccess.tpl",
+                "outputPath": "../../../src/Paradigm.ORM.CodeGenExample.Domain/DataAccess/",
+                "typeMatchers": [
+                    {
+                        "name": "ContainsAttribute",
+                        "parameters": [
+                            "TableAttribute"
+                        ]
+                    }
+                ],
+                "namingRules": [
+                    {
+                        "name": "Format",
+                        "parameters": [
+                            "{0}DatabaseAccess.cs"
+                        ]
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "Namespace",
+                        "value": "Paradigm.ORM.CodeGenExample.Domain.DataAccess"
+                    },
+                    {
+                        "name": "DomainNamespace",
+                        "value": "Paradigm.ORM.CodeGenExample.Domain.Entities"
+                    },
+                    {
+                        "name": "Connector",
+                        "value": "ICassandraConnector"
+                    }
+                ]
+            },
+            /* DATA READER MAPPER INTERFACE */
+            {
+                "name": "DatabaseReaderMapperInterface",
+                "templatePath": "../templates/orm/mappers/imapper.tpl",
+                "outputPath": "../../../src/Paradigm.ORM.CodeGenExample.Domain/Mappers/",
+                "typeMatchers": [
+                    {
+                        "name": "ContainsAttribute",
+                        "parameters": [
+                            "TableAttribute"
+                        ]
+                    }
+                ],
+                "namingRules": [
+                    {
+                        "name": "Format",
+                        "parameters": [
+                            "I{0}DatabaseReaderMapper.cs"
+                        ]
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "Namespace",
+                        "value": "Paradigm.ORM.CodeGenExample.Domain.Mappers"
+                    },
+                    {
+                        "name": "DomainNamespace",
+                        "value": "Paradigm.ORM.CodeGenExample.Domain.Entities"
+                    }
+                ]
+            },
+            /* DATA READER MAPPER */
+            {
+                "name": "DatabaseReaderMapper",
+                "templatePath": "../templates/orm/mappers/mapper.tpl",
+                "outputPath": "../../../src/Paradigm.ORM.CodeGenExample.Domain/Mappers/",
+                "typeMatchers": [
+                    {
+                        "name": "ContainsAttribute",
+                        "parameters": [
+                            "TableAttribute"
+                        ]
+                    }
+                ],
+                "namingRules": [
+                    {
+                        "name": "Format",
+                        "parameters": [
+                            "{0}DatabaseReaderMapper.cs"
+                        ]
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "Namespace",
+                        "value": "Paradigm.ORM.CodeGenExample.Domain.Mappers"
+                    },
+                    {
+                        "name": "DomainNamespace",
+                        "value": "Paradigm.ORM.CodeGenExample.Domain.Entities"
+                    },
+                    {
+                        "name": "Connector",
+                        "value": "ICassandraConnector"
+                    }
+                ]
+            }
+        ]
+    }
+}

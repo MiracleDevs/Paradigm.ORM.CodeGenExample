@@ -1,0 +1,13 @@
+{
+	"databaseType" : "cassandra",
+	//"connectionString" : "Contact Points=192.168.50.40;Port=9042",
+	"connectionString" : "Contact Points=192.168.2.221;Port=9042",
+	"executeScript": true,
+	"generateScript": true,
+	"outputFileName" : "../dist/tracking.cql",
+	"files" : [
+		"scripts/create_keyspace.cql",
+		"scripts/use_keyspace.cql",
+		"tables/tracking_data.cql"
+	]
+}
